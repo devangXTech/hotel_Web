@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodies Website</title>
+    <link rel="shortcut icon" href="img/homeImg.png">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- bootstrap main link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- css custom file********** -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- bootstrap plugins link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+      <!-- start navigation  -->
+      <header class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg">
+                <a href="index.html" class="navbar-brand logo">
+                    <span class="fas fa-utensils"></span> foodies
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <div class="navbar collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav nav mx-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">menu</a>
+                        </li>
+                        <li class="nav-item" id="dropdown">
+                            <a href="#" class="nav-link">pages <span class="fas fa-chevron-down"></span></a>
+                            <div class="dropdown-list">
+                                <a href="blogPost.html" class="dropdown-list-item d-block">blog posts</a>
+                                <a href="blogSingle.html" class="dropdown-list-item d-block">blog single</a>
+                                <a href="404Page.html" class="dropdown-list-item d-block">404 page</a>
+                                <a href="landing.html" class="dropdown-list-item d-block">landing page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <span class="fas fa-search" id="search-btn"></span>
+                    <span class="far fa-moon" id="dark-switch-btn" onclick="darkSwitch(this)"></span>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- end navigation  -->
+
+        <!-- start search box -->
+    <div class="search-box-container">
+        <div class="container">
+            <div class="row justify-content-center">       
+                <span class="fas fa-times" id="search-box-close-btn"></span>
+                <div class="content">
+                    <h2>Search Here Your Favourite Food</h2>
+                    <div class="search-box">
+                        <span class="fas fa-search"></span>
+                        <input type="search" placeholder="enter keyword">
+                        <button class="main-btn">search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end search box -->
+
+
+    <!-- start about header  -->
+    <section class="about-header padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ml-auto img">
+                    <img src="img/homeImg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>contact us</h2>
+            <div class="breadcrumb">
+                   <a href="index.html" class="breadcrumb-item active">home</a>
+                   <a href="#" class="breadcrumb-item">contact us</a>
+            </div>
+        </div>
+    </section>
+    <!-- end about header  -->
+
+    <!-- start contact us  -->
+    <section class="contact-us padding">
+        <div class="container">
+            <h1 class="heading">get in touch</h1>
+            <form>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="inp-box">
+                        <h4>first name</h4>
+                        <input type="text">
+                    </div>
+                    <div class="inp-box">
+                        <h4>last name</h4>
+                        <input type="text">
+                    </div>
+                    <div class="inp-box">
+                        <h4>email</h4>
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="inp-box">
+                        <h4>write message</h4>
+                        <textarea></textarea>                        
+                    </div>
+                  <div class="row">
+                      <div class="col-12 text-right">
+                        <input type="submit" value="send now" class="main-btn">
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29386.963165357774!2d72.58214575267809!3d22.97340328857248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8f5949391fdb%3A0x1470f51f2439aa59!2sIsanpur%2C%20Ahmedabad%2C%20Gujarat%20380043!5e0!3m2!1sen!2sin!4v1628757113275!5m2!1sen!2sin" width="90%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end contact us  -->
+
+
+    <hr class="line">
+  <!-- start footer  -->
+    <footer class="footer padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <a href="#" class="logo"> <span class="fas fa-utensils"></span> foodies</a>
+                    <p>Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod
+                        ligul aeget, enenatis dui.</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>pages</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="box">
+                                <a href="#"> <span class="fas fa-chevron-right"></span> home</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> about us</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> services</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> blog posts</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> contact us</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box">
+                                <a href="#"> <span class="fas fa-chevron-right"></span> foodies menu</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> privacy policy</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> terms and conditions</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>news letter</h4>
+                    <div class="newsletter-content">
+                        <div class="box">
+                            <h4>subscribe here now</h4>
+                            <div class="search-item">
+                                <input type="email" placeholder="email address">
+                                <span class="fas fa-paper-plane"></span>
+                            </div>
+                            <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <hr class="footer-line">
+                <div class="col-lg-6 col-12">
+                    <div class="credit">@ 2020 Foodies. All rights reserved. Design by <a href="#"> IG coding</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 text-right mt-lg-0 mt-5">
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+    <!-- javascript custom link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

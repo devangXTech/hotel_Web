@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodies Website</title>
+    <link rel="shortcut icon" href="img/homeImg.png">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- bootstrap main link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- css custom file********** -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- bootstrap plugins link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- start navigation  -->
+    <header class="fixed-top blogpost-header">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg">
+                <a href="index.html" class="navbar-brand logo">
+                    <span class="fas fa-utensils"></span> foodies
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <div class="navbar collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav nav mx-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">menu</a>
+                        </li>
+                        <li class="nav-item" id="dropdown">
+                            <a href="#" class="nav-link active">pages <span class="fas fa-chevron-down"></span></a>
+                            <div class="dropdown-list">
+                                <a href="blogPost.html" class="dropdown-list-item d-block">blog posts</a>
+                                <a href="blogSingle.html" class="dropdown-list-item d-block active">blog single</a>
+                                <a href="404Page.html" class="dropdown-list-item d-block">404 page</a>
+                                <a href="landing.html" class="dropdown-list-item d-block">landing page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <span class="fas fa-search" id="search-btn"></span>
+                    <span class="far fa-moon" id="dark-switch-btn" onclick="darkSwitch(this)"></span>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- end navigation  -->
+
+    <!-- start search box -->
+    <div class="search-box-container">
+        <div class="container">
+            <div class="row justify-content-center">       
+                <span class="fas fa-times" id="search-box-close-btn"></span>
+                <div class="content">
+                    <h2>Search Here Your Favourite Food</h2>
+                    <div class="search-box">
+                        <span class="fas fa-search"></span>
+                        <input type="search" placeholder="enter keyword">
+                        <button class="main-btn">search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end search box -->
+
+
+    <!-- start menu header  -->
+    <section class="about-header padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ml-auto img">
+                    <img src="img/homeImg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>blog single</h2>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item active">home</a>
+                <a href="#" class="breadcrumb-item">blog single</a>
+            </div>
+        </div>
+    </section>
+    <!-- end menu header  -->
+
+    <div class="blog single-blog padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box">
+                        <div class="date">21st October</div>
+                        <div class="img">
+                            <img src="img/single.jpg" alt="">
+                        </div>
+                        <h1>
+                            OUR LATEST FOODIES BLOG
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore aperiam, eaque ipsa quae ab
+                            illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div class="row blog-img">
+                            <div class="col-md-6">
+                                <img src="img/blog1.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/blog4.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.suscipit
+                            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+                            qui in ea voluptate velit esse quam nihil molestiae consequatu</p>
+                        <p>N Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-self-center">
+                <div class="col-lg-9 tags">
+                    <span>tags:</span>
+                    <a href="#" class="d-inline-block mt-3 mt-lg-0">fresh</a>
+                    <a href="#" class="d-inline-block mt-3 mt-lg-0">foodie</a>
+                    <a href="#" class="d-inline-block mt-3 mt-lg-0">eat</a>
+                    <a href="#" class="d-inline-block mt-3 mt-lg-0">healthy</a>
+                </div>
+                <div class="col-lg-3 text-left text-md-right">
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start previus post -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 previus-post">
+                <a href="#"><span class="fas fa-arrow-left"></span> previus</a>
+            </div>
+        </div>
+    </div>
+    <!-- end previus post -->
+
+    <!-- start comments  -->
+    <section class="comments padding">
+        <div class="container">
+            <h1 class="heading">comments (2)</h1>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="box">
+                        <p><span class="fas fa-hand-point-right"></span> Sed ut perspiciatis unde omnis iste natus error
+                            sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <div class="img">
+                            <img src="img/testi1.jpg" alt="">
+                            <div class="name">
+                                <h3>nemo en</h3>
+                                <p>totam rem</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <button type="button"><span class="fas fa-share"></span> reply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="box">
+                        <p><span class="fas fa-hand-point-right"></span> Sed ut perspiciatis unde omnis iste natus error
+                            sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <div class="img">
+                            <img src="img/testi2.jpg" alt="">
+                            <div class="name">
+                                <h3>nemo en</h3>
+                                <p>totam rem</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <button type="button"><span class="fas fa-share"></span> reply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end comments  -->
+
+    <!-- start contact -->
+    <div class="contact-form padding">
+        <div class="container">
+            <h1 class="heading">leave a message</h1>
+            <form action="">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="your name" class="inp">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" placeholder="your email" class="inp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <textarea placeholder="write your comments here"></textarea>
+                    </div>
+                    <div class="col-12 text-right">
+                        <input type="submit" value="post comment" class="main-btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- end contact -->
+    <hr class="line">
+
+    <!-- start footer  -->
+    <footer class="footer padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <a href="#" class="logo"> <span class="fas fa-utensils"></span> foodies</a>
+                    <p>Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod
+                        ligul aeget, enenatis dui.</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>pages</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="box">
+                                <a href="#"> <span class="fas fa-chevron-right"></span> home</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> about us</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> services</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> blog posts</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> contact us</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box">
+                                <a href="#"> <span class="fas fa-chevron-right"></span> foodies menu</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> privacy policy</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> terms and conditions</a>
+                                <a href="#"> <span class="fas fa-chevron-right"></span> FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>news letter</h4>
+                    <div class="newsletter-content">
+                        <div class="box">
+                            <h4>subscribe here now</h4>
+                            <div class="search-item">
+                                <input type="email" placeholder="email address">
+                                <span class="fas fa-paper-plane"></span>
+                            </div>
+                            <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <hr class="footer-line">
+                <div class="col-lg-6 col-12">
+                    <div class="credit">@ 2020 Foodies. All rights reserved. Design by <a href="#"> IG coding</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 text-right mt-lg-0 mt-5">
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+    <!-- javascript custom link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
